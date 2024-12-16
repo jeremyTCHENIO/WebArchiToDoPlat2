@@ -9,6 +9,12 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
 // Routes
 app.get('/tasks', (req, res) => {
     res.json(tasks);
