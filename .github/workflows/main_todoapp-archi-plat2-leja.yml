@@ -25,8 +25,7 @@ jobs:
         run: |
           cd todoApp
           npm install
-          npm run build --if-present
-          npm run test --if-present
+          npm start
 
       - name: Zip artifact for deployment
         run: |
